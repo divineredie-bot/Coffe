@@ -1,0 +1,41 @@
+.hero {
+    background-image: url('../../images/background.png');
+    height: 777px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 86px;
+}
+
+.hero__title {
+    font-family: 'Joahn';
+    color: var(--color-light);
+    font-size: 64px;
+
+}
+.hero__subtitle {
+    font-family: "Kdam Thmor Pro";
+    font-size: 96px;
+    color: var(--color-pink-light);
+    margin: 10px;
+}
+
+.hero__button {
+    padding: 19px;
+    font-family: 'Jockey One';
+    font-size: 40px;
+    background-color: var(--color-light-alt);
+    width: 190px;
+    margin-left: 80px;
+    margin-top: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: var(--color-pink-light);
+        transform: scale(1.05);
+    }
+}

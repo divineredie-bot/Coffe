@@ -1,0 +1,31 @@
+.milkshake__cards {
+    justify-content: space-around
+}
+
+.milkshake__card {
+    @include card;
+    background-color: var(--color-light-alt);
+}
+
+.milkshake__card-title {
+    font-family: 'Langar';
+    font-size: 32px;
+}
+.milkshake__purchase {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+    font-family: 'Kadwa';
+    align-items: center;
+}
+.milkshake__price {
+    font-size: 32px;
+}
+
+.milkshake__buy {
+    color: var(--color-light);
+    padding: 5px 15px;
+    background-color: var(--color-brown-dark);
+    border-radius: 40px;
+}

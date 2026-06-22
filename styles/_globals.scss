@@ -1,0 +1,45 @@
+body {
+    background-color: var(--color-pink-light);
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    line-height: 1.28;
+    color: var(--color-dark);
+}
+
+
+a,
+button,
+input,
+textarea,
+svg *{
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4{
+    font-weight: 500;
+}
+
+.title{
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Kadwa';
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Langar';
+}
+
+.cards {
+    padding-top: 80px;
+    padding-inline: 30px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}

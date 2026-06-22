@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.header__nav {
+    display: flex;
+    gap: 81px;
+}
+
+.header__link {
+    font-family: 'Jockey One', sans-serif;  
+    @include reset-link;
+    font-weight: 500;
+    font-size: 40px;
+    transition: color 0.3s ease;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        bottom: -4px;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.header__search {
+    margin-right: 40px; 
+}

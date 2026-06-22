@@ -1,0 +1,73 @@
+.categories {
+    padding-block: 80px;
+}
+
+.cards {
+    padding-top: 80px;
+    padding-inline: 30px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#coffe-card1{
+    background-image: url(../../images/coffe1.jpg);
+    @include card;
+}
+
+#coffe-card2{
+    background-image: url(../../images/coffe2.jpg);
+    @include card;
+}
+
+#coffe-card3{
+    background-image: url(../../images/coffe3.jpg);
+    @include card;
+}
+
+
+.categories__card-title {
+    color: var(--color-light);
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.categories__card-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 11px;
+    background-color: var(--color-light-alt);
+    bottom: -20px;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.categories__card-link {
+    font-size: 24px;
+    color: var(--color-light);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-light);
+        bottom: -4px;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+
+    &:hover {
+        color: var(--color-light-alt);
+
+        &::after {
+            width: 100%;
+        }
+    }
+}
