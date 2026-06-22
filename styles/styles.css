@@ -387,7 +387,7 @@ h1, h2, h3, h4 {
 }
 
 #coffe-card1 {
-  background-image: url(../../images/coffe1.jpg);
+  background-image: url(../images/coffe1.jpg);
   width: 378px;
   height: 378px;
   border-radius: 60px;
@@ -400,7 +400,7 @@ h1, h2, h3, h4 {
 }
 
 #coffe-card2 {
-  background-image: url(../../images/coffe2.jpg);
+  background-image: url(../images/coffe2.jpg);
   width: 378px;
   height: 378px;
   border-radius: 60px;
@@ -413,7 +413,7 @@ h1, h2, h3, h4 {
 }
 
 #coffe-card3 {
-  background-image: url(../../images/coffe3.jpg);
+  background-image: url(../images/coffe3.jpg);
   width: 378px;
   height: 378px;
   border-radius: 60px;
